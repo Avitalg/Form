@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <title>Order a Weather</title>
+        <link href="includes/style.css" rel="stylesheet" /> 
+		<link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+        <script src="includes/script.js"></script>
+	</head>
+	<body class="clear">
+		<div id="wrapper" class="sun">
+			
+			<h1>Order a Weather</h1>
+			<form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get">
+				<input type="text" name="fullName" placeholder="Full Name" required/>
+				<br><br>
+				<input type="password" name="pass" placeholder="password" maxlength="8" required/>
+				<br /><br>
+				<input type="email" name="mail" placeholder="Email" />
+				<br /><br>
+				<input type="url" name="website" value="" placeholder="website" />
+				<br /><br>
+				<input type="tel" name="phone" placeholder="Phone Number"/>
+				<br /><br>
+				<label>Hour<input type="number" name="coffee" value="coffee" min="0" max="12" /></label>
+				<br /><br>
+				<label>Temperature -10<input id="range" type="range" name="temper" value="temper"  min="-10" max="100" />100</label>
+				<br /><br>
+				<label>Address:<br> <textarea name="address" value="address" rows="2" cols="20"></textarea></label>
+				<br /><br>
+				
+				<label><fieldset class="choose">
+					<legend>Extras:</legend> 
+					  Food<input type="checkbox" name="interests[]" value="eat" />
+					  Clothes<input type="checkbox" name="interests[]" value="sleep" />
+					  Drink<input type="checkbox" name="interests[]" value="drink" />
+					  Accessories<input type="checkbox" name="interests[]" value="study" />
+				</fieldset></label>
+				
+				<br /><br>
+				<label><fieldset class="choose">
+				<legend>Time:</legend> 
+				<label>AM <input type="radio" id="radio1" name="gender" value="m" ></label>
+				<label>PM<input type="radio" id="radio2" name="gender" value="f" ></label>
+				</fieldset>
+				<br /><br>
+				<label>Sky Mode
+				<select id="rain" name="age">
+				<option value="1">Clouds</option>
+				<option value="2">Rain</option>
+				<option value="3">Snow</option>
+				<option value="4">Clean</option>
+				</select></label>
+				<br /><br>
+				<label>Activity
+		   		 <input type="text" list="langs" name="animals">
+				 <datalist id="langs">
+				 <option value="1" label="Sky Trip">
+				 <option value="2" label="Vaction" >
+				 <option value="3" label="Sea">
+				 <option value="4" label="Hike">
+				 <option value="5" label="Walk">
+				 </datalist></label>
+				<br /><br>
+				<input id="submit" type="image" src="images/img.png" name="submit" formtarget="_blank" />
+			</form>
+		</div>
+		<div id="cloudy1" class="nice_cloud"></div>
+		<div id="cloudy2" class="nice_cloud"></div>
+		<div id="cloudy3" class="nice_cloud"></div>
+	</body>
+</html>
