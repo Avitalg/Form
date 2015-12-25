@@ -1,0 +1,114 @@
+*{
+	padding : 0px;
+	margin : 0px;
+}
+
+#wrapper{
+	margin: 0px auto;
+	text-align: center;
+	width: 750px;
+}
+
+input{
+	font-family: 'Chewy', cursive;
+}
+
+
+.sun{
+	border: 1px solid #FF9933;
+	border-radius: 60% ;
+	background:linear-gradient(#FFCC33, #f06d06);		
+}
+
+.moon{
+	border: 1px solid #cccccc;
+	border-radius: 60% ;
+	background:linear-gradient(#f2f2f2, #FFFFFF);
+}
+
+.choose{
+	width:350px;
+	margin: 0px auto;
+}
+
+body{
+	padding: 100px 0;
+	font-family: 'Chewy', cursive;
+}
+
+h1{
+	color: #1f2e2e;
+}
+
+.clear{
+	background:  #9999ff;
+	background:linear-gradient(#9999ff, #ccccff);
+}
+
+.light{
+	background:  #CCFF33;
+}
+
+.night{
+	background: #00001a;
+	background:linear-gradient(#00001a, #00004d);
+}
+
+#cloudy1 {
+    animation: cloudy 5s ease-in-out infinite;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px; 
+    margin-left: -60px;
+    position: absolute;
+    right: 220px;
+    top: 400px; 
+}
+
+#cloudy2 {
+    animation: cloudy 7s ease-in-out infinite;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px; 
+    margin-left: -60px;
+    position: absolute;
+    left: 255px;
+    top: 100px; 
+}
+
+#cloudy3 {
+    animation: cloudy 6s ease-in-out infinite;
+    border-radius: 50%;
+    height: 70px;
+    width: 90px; 
+    margin-left: -60px;
+    position: absolute;
+    left: 260px;
+    top: 600px; 
+}
+
+.nice_cloud{
+	background: #FFFFFF;
+	box-shadow: 
+        #FFFFFF 65px -15px 0 -5px, 
+        #FFFFFF 25px -25px, 
+        #FFFFFF 30px 10px, 
+        #FFFFFF 60px 15px 0 -10px, 
+        #FFFFFF 85px 5px 0 -5px;
+}
+
+.bad_cloud{
+	background: #808080;
+	box-shadow: 
+        #808080 65px -15px 0 -5px, 
+       	#808080 25px -25px, 
+        #808080 30px 10px, 
+        #808080 60px 15px 0 -10px, 
+        #808080 85px 5px 0 -5px;
+}
+
+@keyframes cloudy {
+    50% { transform: translateX(-100px); }
+}
+
+
